@@ -30,12 +30,14 @@
 		5C41A514234A0BA10008A102 /* CarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C41A510234A0BA10008A102 /* CarCollectionViewCell.xib */; };
 		5C41A517234A11360008A102 /* PresentableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41A516234A11360008A102 /* PresentableCell.swift */; };
 		5C41A518234A11360008A102 /* PresentableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41A516234A11360008A102 /* PresentableCell.swift */; };
+		5C41A51A234A7C080008A102 /* SixtRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41A519234A7C080008A102 /* SixtRequestTest.swift */; };
+		5C41A51E234A825A0008A102 /* ViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41A51D234A825A0008A102 /* ViewModelTest.swift */; };
+		5C41A520234A840D0008A102 /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C41A51F234A840D0008A102 /* response.json */; };
 		5CA0FBFF2349C8D1004836D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA0FBFE2349C8D1004836D4 /* AppDelegate.swift */; };
 		5CA0FC032349C8D1004836D4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA0FC022349C8D1004836D4 /* MapViewController.swift */; };
 		5CA0FC062349C8D1004836D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA0FC042349C8D1004836D4 /* Main.storyboard */; };
 		5CA0FC082349C8D3004836D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA0FC072349C8D3004836D4 /* Assets.xcassets */; };
 		5CA0FC0B2349C8D3004836D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA0FC092349C8D3004836D4 /* LaunchScreen.storyboard */; };
-		5CA0FC162349C8D3004836D4 /* SixtCarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA0FC152349C8D3004836D4 /* SixtCarsTests.swift */; };
 		5CA0FC212349C8D3004836D4 /* SixtCarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA0FC202349C8D3004836D4 /* SixtCarsUITests.swift */; };
 		5CA0FC2F2349CF44004836D4 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA0FC2E2349CF44004836D4 /* ListViewController.swift */; };
 		7DD0E344CCF427920AA8F505 /* Pods_SixtCarsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E183CCD173152170A591582A /* Pods_SixtCarsTests.framework */; };
@@ -73,6 +75,9 @@
 		5C41A50F234A0BA10008A102 /* CarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCollectionViewCell.swift; sourceTree = "<group>"; };
 		5C41A510234A0BA10008A102 /* CarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCollectionViewCell.xib; sourceTree = "<group>"; };
 		5C41A516234A11360008A102 /* PresentableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableCell.swift; sourceTree = "<group>"; };
+		5C41A519234A7C080008A102 /* SixtRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtRequestTest.swift; sourceTree = "<group>"; };
+		5C41A51D234A825A0008A102 /* ViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTest.swift; sourceTree = "<group>"; };
+		5C41A51F234A840D0008A102 /* response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
 		5CA0FBFB2349C8D1004836D4 /* SixtCars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SixtCars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA0FBFE2349C8D1004836D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CA0FC022349C8D1004836D4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +86,6 @@
 		5CA0FC0A2349C8D3004836D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CA0FC0C2349C8D3004836D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CA0FC112349C8D3004836D4 /* SixtCarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SixtCarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CA0FC152349C8D3004836D4 /* SixtCarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtCarsTests.swift; sourceTree = "<group>"; };
 		5CA0FC172349C8D3004836D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CA0FC1C2349C8D3004836D4 /* SixtCarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SixtCarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA0FC202349C8D3004836D4 /* SixtCarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtCarsUITests.swift; sourceTree = "<group>"; };
@@ -203,8 +207,9 @@
 		5CA0FC142349C8D3004836D4 /* SixtCarsTests */ = {
 			isa = PBXGroup;
 			children = (
-				5CA0FC152349C8D3004836D4 /* SixtCarsTests.swift */,
 				5CA0FC172349C8D3004836D4 /* Info.plist */,
+				5C41A519234A7C080008A102 /* SixtRequestTest.swift */,
+				5C41A51D234A825A0008A102 /* ViewModelTest.swift */,
 			);
 			path = SixtCarsTests;
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 		5CA0FC332349D363004836D4 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				5C41A51F234A840D0008A102 /* response.json */,
 				5CA0FC072349C8D3004836D4 /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -403,6 +409,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C41A520234A840D0008A102 /* response.json in Resources */,
 				5C41A514234A0BA10008A102 /* CarCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,14 +536,15 @@
 			files = (
 				5C41A4F12349D9A10008A102 /* NetworkManager.swift in Sources */,
 				5C41A512234A0BA10008A102 /* CarCollectionViewCell.swift in Sources */,
+				5C41A51E234A825A0008A102 /* ViewModelTest.swift in Sources */,
 				5C41A518234A11360008A102 /* PresentableCell.swift in Sources */,
-				5CA0FC162349C8D3004836D4 /* SixtCarsTests.swift in Sources */,
 				5C41A50B2349E34D0008A102 /* SixtApi.swift in Sources */,
 				5C41A4E82349D57A0008A102 /* CarViewModel.swift in Sources */,
 				5C41A4EE2349D7200008A102 /* Car.swift in Sources */,
 				5C41A50E234A03250008A102 /* BaseViewController.swift in Sources */,
 				5C41A4F42349DB7E0008A102 /* NetworkError.swift in Sources */,
 				5C41A5082349DE340008A102 /* SixtRequest.swift in Sources */,
+				5C41A51A234A7C080008A102 /* SixtRequestTest.swift in Sources */,
 				5C41A5052349DDF90008A102 /* RequestProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
