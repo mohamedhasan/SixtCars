@@ -33,20 +33,21 @@ class MapViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavBar()
-        
+        loadCars()
+    }
+    
+    @objc func loadCars() {
         SixtApi.getCars(completion: { (response) in
-            
             if let cars = response as? [CarModel] {
                 self.carsList = cars
                 //load Data on Map:
                 self.addAnnotations()
-                
                 //Load Data on List
                 self.listViewController().reloadData()
             }
-            
         }) { (error) in
             self.presentError(error: error)
+            self.listViewController().presentError(error: error)
         }
     }
     
@@ -56,10 +57,15 @@ class MapViewController: BaseViewController {
     
     func setupNavBar() {
         
+        let rightBarItem = UIBarButtonItem(image: UIImage(named: "refresh"), style: .plain, target: self, action: #selector(loadCars))
+        rightBarItem.tintColor = .black
+        navigationItem.rightBarButtonItem = rightBarItem
+        
         navigationItem.titleView = UIImageView(image: UIImage(named: "logo"))
-        let barItem = UIBarButtonItem(image: UIImage(named: "grid"), style: .plain, target: self, action: #selector(showList))
-        barItem.tintColor = .black
-        navigationItem.leftBarButtonItem = barItem
+        
+        let leftBarItem = UIBarButtonItem(image: UIImage(named: "grid"), style: .plain, target: self, action: #selector(showList))
+        leftBarItem.tintColor = .black
+        navigationItem.leftBarButtonItem = leftBarItem
     }
     
     @objc func showList() {

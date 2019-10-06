@@ -42,18 +42,27 @@
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="lgI-Kt-MwM"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Internet Connection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kn9-h0-6A0">
+                                <rect key="frame" x="72.5" y="437" width="269.5" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Kn9-h0-6A0" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="4I6-Q2-w78"/>
                             <constraint firstItem="T6c-cX-YUi" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="7pm-or-xuH"/>
                             <constraint firstItem="T6c-cX-YUi" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="LTn-s2-yMr"/>
                             <constraint firstItem="T6c-cX-YUi" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="hcW-au-wgV"/>
+                            <constraint firstItem="Kn9-h0-6A0" firstAttribute="centerY" secondItem="PQr-Ze-W5v" secondAttribute="centerY" id="ncx-4k-ku9"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="T6c-cX-YUi" secondAttribute="trailing" id="y7r-rP-yYc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <connections>
                         <outlet property="collectionview" destination="T6c-cX-YUi" id="hjU-KU-sd5"/>
+                        <outlet property="noInternetConnetionLabel" destination="Kn9-h0-6A0" id="OG4-v6-K0p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
