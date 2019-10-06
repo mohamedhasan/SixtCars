@@ -54,7 +54,7 @@ class NetworkManager: NSObject {
                 guard response.result.isSuccess else {
                     let errorMessage = String(describing: response.result.error)
                     print("Error while fetching: \(errorMessage)")
-                    errorHandler(NetworkError.custom(errorMessage))
+                    errorHandler(NetworkError.other)
                     return
                 }
                 

@@ -257,8 +257,8 @@
 			children = (
 				5C41A4EF2349D9A10008A102 /* NetworkManager.swift */,
 				5C41A4F22349DB7E0008A102 /* NetworkError.swift */,
-				5C41A4FF2349DDF90008A102 /* requests */,
 				5C41A5092349E34D0008A102 /* SixtApi.swift */,
+				5C41A4FF2349DDF90008A102 /* requests */,
 			);
 			path = Network;
 			sourceTree = "<group>";
