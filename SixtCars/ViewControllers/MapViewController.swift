@@ -12,7 +12,15 @@ class MapViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        SixtApi.getCars(completion: { (response) in
+            
+            let cars = response as? [CarModel]
+            
+            
+        }) { (error) in
+            
+        }
     }
 
 
