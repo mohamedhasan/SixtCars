@@ -11,7 +11,7 @@ import MapKit
 
 class CarViewModel: NSObject {
 
-    var model:CarModel
+    private let model:CarModel
     
     public init(model:CarModel) {
         self.model = model

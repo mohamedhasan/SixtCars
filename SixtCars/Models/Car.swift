@@ -8,24 +8,23 @@
 
 import UIKit
 
-class CarModel: Codable {
+struct CarModel: Codable {
 
-     var id:String?
-     var modelIdentifier:String?
-    
-     var modelName:String!
-     var name:String!
-     var make:String!
-     var group:String!
-     var color:String!
-     var series:String!
-     var fuelType:String!
-     var fuelLevel:Float!
-     var transmission:String!
-     var licensePlate:String!
-     var latitude:Double!
-     var longitude:Double!
-     var innerCleanliness:String!
-     var carImageUrl:String?
+     let id:String!
+     let modelIdentifier:String!
+     let modelName:String!
+     let name:String!
+     let make:String!
+     let group:String!
+     let color:String!
+     let series:String!
+     let fuelType:String!
+     let fuelLevel:Float!
+     let transmission:String!
+     let licensePlate:String!
+     let latitude:Double!
+     let longitude:Double!
+     let innerCleanliness:String!
+     let carImageUrl:String?
 
 }

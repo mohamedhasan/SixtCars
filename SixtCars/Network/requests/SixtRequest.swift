@@ -20,6 +20,7 @@ class SixtRequest: NSObject,RequestProtocol {
         self.url = SixtRequest.SIXT_URL
         self.headers = ["Content-Type" : "application/json"]
         self.method = .get
+        self.paramters = paramters
     }
     
     
