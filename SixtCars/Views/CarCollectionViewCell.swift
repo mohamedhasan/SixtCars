@@ -9,7 +9,7 @@
 import UIKit
 import SDWebImage
 
-class CarCollectionViewCell: UICollectionViewCell,PresentableCell {
+class CarCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var carImage:UIImageView!
     @IBOutlet weak var modelLabel:UILabel!
@@ -29,6 +29,9 @@ class CarCollectionViewCell: UICollectionViewCell,PresentableCell {
             carImage.image = UIImage(named: "placeholder")
         }
     }
+}
+
+extension CarCollectionViewCell:PresentableCell {
     
     static func cellIdentifier() -> String {
         return "CarCollectionViewCell"

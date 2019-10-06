@@ -20,7 +20,7 @@ class MapViewController: BaseViewController {
     var listVC:ListViewController?
     var carsList = [CarModel]()
     
-    func listViewController() -> ListViewController {
+    private func listViewController() -> ListViewController {
         
         if listVC == nil {
             listVC = storyboard?.instantiateViewController(withIdentifier: ListViewController.identifier()) as? ListViewController
@@ -36,7 +36,7 @@ class MapViewController: BaseViewController {
         loadCars()
     }
     
-    @objc func loadCars() {
+    @objc private func loadCars() {
         
         mapView.removeAnnotations(mapView.annotations)
         SixtApi.getCars(completion: { (response) in
@@ -57,7 +57,7 @@ class MapViewController: BaseViewController {
         super.viewDidAppear(animated)
     }
     
-    func setupNavBar() {
+    private func setupNavBar() {
         
         let rightBarItem = UIBarButtonItem(image: UIImage(named: "refresh"), style: .plain, target: self, action: #selector(loadCars))
         rightBarItem.tintColor = .black
@@ -70,7 +70,7 @@ class MapViewController: BaseViewController {
         navigationItem.leftBarButtonItem = leftBarItem
     }
     
-    @objc func showList() {
+    @objc private func showList() {
         let listView = listViewController()
         self.presentAsStork(listView)
     }
