@@ -17,13 +17,17 @@ class CarCollectionViewCell: UICollectionViewCell,PresentableCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     func setup(viewModel:CarViewModel) {
         transimittionImage.image = viewModel.transmissionImage()
         modelLabel.text = viewModel.modelText()
-        carImage.sd_setImage(with: viewModel.photoUrl(), placeholderImage: UIImage(named: "placeholder"))
+        
+        if let url = viewModel.photoUrl() {
+            carImage.sd_setImage(with: url, placeholderImage: UIImage(named: "placeholder"))
+        } else {
+            carImage.image = UIImage(named: "placeholder")
+        }
     }
     
     static func cellIdentifier() -> String {

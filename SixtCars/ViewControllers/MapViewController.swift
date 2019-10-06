@@ -37,6 +37,8 @@ class MapViewController: BaseViewController {
     }
     
     @objc func loadCars() {
+        
+        mapView.removeAnnotations(mapView.annotations)
         SixtApi.getCars(completion: { (response) in
             if let cars = response as? [CarModel] {
                 self.carsList = cars

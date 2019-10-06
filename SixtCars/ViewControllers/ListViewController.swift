@@ -15,7 +15,7 @@ class ListViewController: BaseViewController {
     let COLUMNS:CGFloat = 2.0
     let COLUMN_PADDING:CGFloat = 20.0
     @IBOutlet weak var collectionview:UICollectionView?
-    @IBOutlet weak var noInternetConnetionLabel:UILabel?
+    @IBOutlet weak var noInternetConnetionView:UIView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class ListViewController: BaseViewController {
     func reloadData() {
         carsList = self.delegate?.getCars() ?? []
         collectionview?.reloadData()
-        noInternetConnetionLabel?.alpha = 0
+        noInternetConnetionView?.alpha = 0
     }
 
     override func presentError(error:NetworkError) {
@@ -37,7 +37,7 @@ class ListViewController: BaseViewController {
         case .noInternetConnection:
             carsList = []
             self.collectionview?.reloadData()
-            noInternetConnetionLabel?.alpha = 1
+            noInternetConnetionView?.alpha = 1
             break
         default:
             return
