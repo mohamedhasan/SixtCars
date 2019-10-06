@@ -29,6 +29,10 @@ class CarViewModel: NSObject {
         }
     }
     
+    func mapPin() -> UIImage {
+        return UIImage(named: "pin")!
+    }
+    
     func photoUrl() -> URL? {
         if let url = model.carImageUrl {
             return URL(string: url)
@@ -36,12 +40,23 @@ class CarViewModel: NSObject {
         return nil
     }
     
+    
 }
 
 extension CarViewModel {
-    
     class func collectionViewCell() -> PresentableCell.Type {
         return CarCollectionViewCell.self
     }
-    
+}
+
+extension CarViewModel: MKAnnotation {
+    var coordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2DMake(model.latitude, model.latitude)
+    }
+    public var title: String? {
+        return model.make
+    }
+    public var subtitle: String? {
+        return model.modelName
+    }
 }

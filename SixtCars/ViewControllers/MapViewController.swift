@@ -8,6 +8,7 @@
 
 import UIKit
 import SPStorkController
+import MapKit
 
 protocol CarsDataSourceProtocol:NSObject {
     func getCars() -> [CarModel]
@@ -15,6 +16,7 @@ protocol CarsDataSourceProtocol:NSObject {
 
 class MapViewController: BaseViewController {
 
+    @IBOutlet public weak var mapView: MKMapView!
     var listVC:ListViewController?
     var carsList = [CarModel]()
     
@@ -37,6 +39,7 @@ class MapViewController: BaseViewController {
             if let cars = response as? [CarModel] {
                 self.carsList = cars
                 //load Data on Map:
+                self.addAnnotations()
                 
                 //Load Data on List
                 self.listViewController().reloadData()
@@ -68,5 +71,38 @@ class MapViewController: BaseViewController {
 extension MapViewController: CarsDataSourceProtocol {
     func getCars() -> [CarModel] {
         return carsList
+    }
+}
+
+extension MapViewController: MKMapViewDelegate {
+    
+    private func addAnnotations() {
+        
+        var annotations = [MKAnnotation]()
+        for car in carsList {
+            let annotation = CarViewModel(model: car)
+            annotations.append(annotation)
+        }
+        mapView.addAnnotations(annotations)
+        mapView.showAnnotations(annotations, animated: true)
+    }
+    
+    public func mapView(_ mapView: MKMapView,
+                        viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard let viewModel = annotation as? CarViewModel else {
+            return nil
+        }
+        
+        let identifier = "business"
+        let annotationView: MKAnnotationView
+        if let existingView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) {
+            annotationView = existingView
+        } else {
+            annotationView = MKAnnotationView(annotation: viewModel,
+                                              reuseIdentifier: identifier)
+        }
+        annotationView.image = viewModel.mapPin()
+        annotationView.canShowCallout = true
+        return annotationView
     }
 }
