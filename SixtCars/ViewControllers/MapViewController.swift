@@ -99,7 +99,7 @@ extension MapViewController: MKMapViewDelegate {
             return nil
         }
         
-        let identifier = "business"
+        let identifier = viewModel.pinIdentifier()
         let annotationView: MKAnnotationView
         if let existingView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) {
             annotationView = existingView

@@ -33,6 +33,10 @@ class CarViewModel: NSObject {
         return UIImage(named: "pin")!
     }
     
+    func pinIdentifier() -> String {
+        return model.modelIdentifier ?? modelText()
+    }
+    
     func photoUrl() -> URL? {
         if let url = model.carImageUrl {
             return URL(string: url)
