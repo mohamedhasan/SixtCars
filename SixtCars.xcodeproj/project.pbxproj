@@ -22,6 +22,14 @@
 		5C41A5082349DE340008A102 /* SixtRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41A5062349DE340008A102 /* SixtRequest.swift */; };
 		5C41A50A2349E34D0008A102 /* SixtApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41A5092349E34D0008A102 /* SixtApi.swift */; };
 		5C41A50B2349E34D0008A102 /* SixtApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41A5092349E34D0008A102 /* SixtApi.swift */; };
+		5C41A50D234A03250008A102 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41A50C234A03250008A102 /* BaseViewController.swift */; };
+		5C41A50E234A03250008A102 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41A50C234A03250008A102 /* BaseViewController.swift */; };
+		5C41A511234A0BA10008A102 /* CarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41A50F234A0BA10008A102 /* CarCollectionViewCell.swift */; };
+		5C41A512234A0BA10008A102 /* CarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41A50F234A0BA10008A102 /* CarCollectionViewCell.swift */; };
+		5C41A513234A0BA10008A102 /* CarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C41A510234A0BA10008A102 /* CarCollectionViewCell.xib */; };
+		5C41A514234A0BA10008A102 /* CarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C41A510234A0BA10008A102 /* CarCollectionViewCell.xib */; };
+		5C41A517234A11360008A102 /* PresentableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41A516234A11360008A102 /* PresentableCell.swift */; };
+		5C41A518234A11360008A102 /* PresentableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41A516234A11360008A102 /* PresentableCell.swift */; };
 		5CA0FBFF2349C8D1004836D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA0FBFE2349C8D1004836D4 /* AppDelegate.swift */; };
 		5CA0FC032349C8D1004836D4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA0FC022349C8D1004836D4 /* MapViewController.swift */; };
 		5CA0FC062349C8D1004836D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA0FC042349C8D1004836D4 /* Main.storyboard */; };
@@ -61,6 +69,10 @@
 		5C41A5012349DDF90008A102 /* RequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		5C41A5062349DE340008A102 /* SixtRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtRequest.swift; sourceTree = "<group>"; };
 		5C41A5092349E34D0008A102 /* SixtApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtApi.swift; sourceTree = "<group>"; };
+		5C41A50C234A03250008A102 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5C41A50F234A0BA10008A102 /* CarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCollectionViewCell.swift; sourceTree = "<group>"; };
+		5C41A510234A0BA10008A102 /* CarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCollectionViewCell.xib; sourceTree = "<group>"; };
+		5C41A516234A11360008A102 /* PresentableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableCell.swift; sourceTree = "<group>"; };
 		5CA0FBFB2349C8D1004836D4 /* SixtCars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SixtCars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA0FBFE2349C8D1004836D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CA0FC022349C8D1004836D4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +154,14 @@
 			path = requests;
 			sourceTree = "<group>";
 		};
+		5C41A515234A11120008A102 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5C41A516234A11360008A102 /* PresentableCell.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		5CA0FBF22349C8D1004836D4 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +189,7 @@
 			children = (
 				5CA0FC0C2349C8D3004836D4 /* Info.plist */,
 				5CA0FC302349D323004836D4 /* AppDelegate */,
+				5C41A515234A11120008A102 /* Protocols */,
 				5C41A4EB2349D6890008A102 /* Models */,
 				5CA0FC372349D392004836D4 /* Views */,
 				5CA0FC352349D379004836D4 /* Network */,
@@ -208,6 +229,7 @@
 		5CA0FC312349D335004836D4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5C41A50C234A03250008A102 /* BaseViewController.swift */,
 				5CA0FC022349C8D1004836D4 /* MapViewController.swift */,
 				5CA0FC2E2349CF44004836D4 /* ListViewController.swift */,
 			);
@@ -246,6 +268,8 @@
 			children = (
 				5CA0FC042349C8D1004836D4 /* Main.storyboard */,
 				5CA0FC092349C8D3004836D4 /* LaunchScreen.storyboard */,
+				5C41A50F234A0BA10008A102 /* CarCollectionViewCell.swift */,
+				5C41A510234A0BA10008A102 /* CarCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -371,6 +395,7 @@
 				5CA0FC0B2349C8D3004836D4 /* LaunchScreen.storyboard in Resources */,
 				5CA0FC082349C8D3004836D4 /* Assets.xcassets in Resources */,
 				5CA0FC062349C8D1004836D4 /* Main.storyboard in Resources */,
+				5C41A513234A0BA10008A102 /* CarCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +403,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C41A514234A0BA10008A102 /* CarCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,10 +509,13 @@
 			files = (
 				5C41A5042349DDF90008A102 /* RequestProtocol.swift in Sources */,
 				5C41A4F02349D9A10008A102 /* NetworkManager.swift in Sources */,
+				5C41A517234A11360008A102 /* PresentableCell.swift in Sources */,
+				5C41A50D234A03250008A102 /* BaseViewController.swift in Sources */,
 				5C41A4F32349DB7E0008A102 /* NetworkError.swift in Sources */,
 				5CA0FC2F2349CF44004836D4 /* ListViewController.swift in Sources */,
 				5CA0FC032349C8D1004836D4 /* MapViewController.swift in Sources */,
 				5C41A4ED2349D7200008A102 /* Car.swift in Sources */,
+				5C41A511234A0BA10008A102 /* CarCollectionViewCell.swift in Sources */,
 				5CA0FBFF2349C8D1004836D4 /* AppDelegate.swift in Sources */,
 				5C41A5072349DE340008A102 /* SixtRequest.swift in Sources */,
 				5C41A50A2349E34D0008A102 /* SixtApi.swift in Sources */,
@@ -499,10 +528,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C41A4F12349D9A10008A102 /* NetworkManager.swift in Sources */,
+				5C41A512234A0BA10008A102 /* CarCollectionViewCell.swift in Sources */,
+				5C41A518234A11360008A102 /* PresentableCell.swift in Sources */,
 				5CA0FC162349C8D3004836D4 /* SixtCarsTests.swift in Sources */,
 				5C41A50B2349E34D0008A102 /* SixtApi.swift in Sources */,
 				5C41A4E82349D57A0008A102 /* CarViewModel.swift in Sources */,
 				5C41A4EE2349D7200008A102 /* Car.swift in Sources */,
+				5C41A50E234A03250008A102 /* BaseViewController.swift in Sources */,
 				5C41A4F42349DB7E0008A102 /* NetworkError.swift in Sources */,
 				5C41A5082349DE340008A102 /* SixtRequest.swift in Sources */,
 				5C41A5052349DDF90008A102 /* RequestProtocol.swift in Sources */,
