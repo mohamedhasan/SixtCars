@@ -34,7 +34,7 @@ class CarViewModel: NSObject {
     }
     
     func pinIdentifier() -> String {
-        return model.modelIdentifier ?? modelText()
+        return "pinIdentifier"
     }
     
     func photoUrl() -> URL? {
@@ -44,7 +44,9 @@ class CarViewModel: NSObject {
         return nil
     }
     
-    
+    func licensePlate() -> String {
+        return model.licensePlate
+    }
 }
 
 extension CarViewModel {

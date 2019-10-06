@@ -113,4 +113,20 @@ extension MapViewController: MKMapViewDelegate {
         annotationView.canShowCallout = true
         return annotationView
     }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        
+        let detailsVC = storyboard?.instantiateViewController(withIdentifier: CarDetailsViewController.identifier()) as! CarDetailsViewController
+        if let viewModel = view.annotation as? CarViewModel {
+            
+            let transitionDelegate = SPStorkTransitioningDelegate()
+            detailsVC.transitioningDelegate = transitionDelegate
+            detailsVC.modalPresentationStyle = .custom
+            transitionDelegate.customHeight = 350
+            self.present(detailsVC, animated: true, completion: nil)
+            detailsVC.setup(viewModel: viewModel)
+        }
+        
+    }
+    
 }
