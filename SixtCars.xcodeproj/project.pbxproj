@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0914B1523BE6056BFF5201 /* Pods_SixtCars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72EA4E08192A7C6581241102 /* Pods_SixtCars.framework */; };
+		5C41A4E72349D57A0008A102 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41A4E62349D57A0008A102 /* CarViewModel.swift */; };
+		5C41A4E82349D57A0008A102 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41A4E62349D57A0008A102 /* CarViewModel.swift */; };
+		5C41A4ED2349D7200008A102 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41A4EC2349D7200008A102 /* Car.swift */; };
+		5C41A4EE2349D7200008A102 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41A4EC2349D7200008A102 /* Car.swift */; };
 		5CA0FBFF2349C8D1004836D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA0FBFE2349C8D1004836D4 /* AppDelegate.swift */; };
-		5CA0FC012349C8D1004836D4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA0FC002349C8D1004836D4 /* FirstViewController.swift */; };
-		5CA0FC032349C8D1004836D4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA0FC022349C8D1004836D4 /* SecondViewController.swift */; };
+		5CA0FC032349C8D1004836D4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA0FC022349C8D1004836D4 /* MapViewController.swift */; };
 		5CA0FC062349C8D1004836D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA0FC042349C8D1004836D4 /* Main.storyboard */; };
 		5CA0FC082349C8D3004836D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA0FC072349C8D3004836D4 /* Assets.xcassets */; };
 		5CA0FC0B2349C8D3004836D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA0FC092349C8D3004836D4 /* LaunchScreen.storyboard */; };
 		5CA0FC162349C8D3004836D4 /* SixtCarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA0FC152349C8D3004836D4 /* SixtCarsTests.swift */; };
 		5CA0FC212349C8D3004836D4 /* SixtCarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA0FC202349C8D3004836D4 /* SixtCarsUITests.swift */; };
+		5CA0FC2F2349CF44004836D4 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA0FC2E2349CF44004836D4 /* ListViewController.swift */; };
+		7DD0E344CCF427920AA8F505 /* Pods_SixtCarsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E183CCD173152170A591582A /* Pods_SixtCarsTests.framework */; };
+		BD2263B37B32C788E3C0E3E1 /* Pods_SixtCarsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5580399EC4313CE49CD7166 /* Pods_SixtCarsUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B88ACBE9326446A97F343F2 /* Pods-SixtCarsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SixtCarsUITests.release.xcconfig"; path = "Target Support Files/Pods-SixtCarsUITests/Pods-SixtCarsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		53DF85B2F968E92347776EAB /* Pods-SixtCarsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SixtCarsUITests.debug.xcconfig"; path = "Target Support Files/Pods-SixtCarsUITests/Pods-SixtCarsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C41A4E62349D57A0008A102 /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
+		5C41A4EC2349D7200008A102 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		5CA0FBFB2349C8D1004836D4 /* SixtCars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SixtCars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA0FBFE2349C8D1004836D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5CA0FC002349C8D1004836D4 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		5CA0FC022349C8D1004836D4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		5CA0FC022349C8D1004836D4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5CA0FC052349C8D1004836D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CA0FC072349C8D3004836D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CA0FC0A2349C8D3004836D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,14 @@
 		5CA0FC1C2349C8D3004836D4 /* SixtCarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SixtCarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA0FC202349C8D3004836D4 /* SixtCarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtCarsUITests.swift; sourceTree = "<group>"; };
 		5CA0FC222349C8D3004836D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CA0FC2E2349CF44004836D4 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		6CCDA1104C7D97B5C0BEBB23 /* Pods-SixtCarsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SixtCarsTests.release.xcconfig"; path = "Target Support Files/Pods-SixtCarsTests/Pods-SixtCarsTests.release.xcconfig"; sourceTree = "<group>"; };
+		72EA4E08192A7C6581241102 /* Pods_SixtCars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SixtCars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1063C6403EC5BCDD3116D44 /* Pods-SixtCars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SixtCars.debug.xcconfig"; path = "Target Support Files/Pods-SixtCars/Pods-SixtCars.debug.xcconfig"; sourceTree = "<group>"; };
+		C7B067C6D3DD14FFA29104D7 /* Pods-SixtCarsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SixtCarsTests.debug.xcconfig"; path = "Target Support Files/Pods-SixtCarsTests/Pods-SixtCarsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5580399EC4313CE49CD7166 /* Pods_SixtCarsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SixtCarsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E183CCD173152170A591582A /* Pods_SixtCarsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SixtCarsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE5F8F6D926E52B1AAC13574 /* Pods-SixtCars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SixtCars.release.xcconfig"; path = "Target Support Files/Pods-SixtCars/Pods-SixtCars.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0914B1523BE6056BFF5201 /* Pods_SixtCars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD0E344CCF427920AA8F505 /* Pods_SixtCarsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD2263B37B32C788E3C0E3E1 /* Pods_SixtCarsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E260A1CF9E1381958466BD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1063C6403EC5BCDD3116D44 /* Pods-SixtCars.debug.xcconfig */,
+				EE5F8F6D926E52B1AAC13574 /* Pods-SixtCars.release.xcconfig */,
+				C7B067C6D3DD14FFA29104D7 /* Pods-SixtCarsTests.debug.xcconfig */,
+				6CCDA1104C7D97B5C0BEBB23 /* Pods-SixtCarsTests.release.xcconfig */,
+				53DF85B2F968E92347776EAB /* Pods-SixtCarsUITests.debug.xcconfig */,
+				4B88ACBE9326446A97F343F2 /* Pods-SixtCarsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5C41A4EB2349D6890008A102 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C41A4EC2349D7200008A102 /* Car.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5CA0FBF22349C8D1004836D4 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +126,8 @@
 				5CA0FC142349C8D3004836D4 /* SixtCarsTests */,
 				5CA0FC1F2349C8D3004836D4 /* SixtCarsUITests */,
 				5CA0FBFC2349C8D1004836D4 /* Products */,
+				3E260A1CF9E1381958466BD0 /* Pods */,
+				B2DC2E293A11D8B3F8E7441A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +144,14 @@
 		5CA0FBFD2349C8D1004836D4 /* SixtCars */ = {
 			isa = PBXGroup;
 			children = (
-				5CA0FBFE2349C8D1004836D4 /* AppDelegate.swift */,
-				5CA0FC002349C8D1004836D4 /* FirstViewController.swift */,
-				5CA0FC022349C8D1004836D4 /* SecondViewController.swift */,
-				5CA0FC042349C8D1004836D4 /* Main.storyboard */,
-				5CA0FC072349C8D3004836D4 /* Assets.xcassets */,
-				5CA0FC092349C8D3004836D4 /* LaunchScreen.storyboard */,
 				5CA0FC0C2349C8D3004836D4 /* Info.plist */,
+				5CA0FC302349D323004836D4 /* AppDelegate */,
+				5C41A4EB2349D6890008A102 /* Models */,
+				5CA0FC372349D392004836D4 /* Views */,
+				5CA0FC352349D379004836D4 /* Network */,
+				5CA0FC342349D36F004836D4 /* ViewModels */,
+				5CA0FC312349D335004836D4 /* ViewControllers */,
+				5CA0FC332349D363004836D4 /* Assets */,
 			);
 			path = SixtCars;
 			sourceTree = "<group>";
@@ -128,6 +174,65 @@
 			path = SixtCarsUITests;
 			sourceTree = "<group>";
 		};
+		5CA0FC302349D323004836D4 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5CA0FBFE2349C8D1004836D4 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		5CA0FC312349D335004836D4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5CA0FC022349C8D1004836D4 /* MapViewController.swift */,
+				5CA0FC2E2349CF44004836D4 /* ListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5CA0FC332349D363004836D4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5CA0FC072349C8D3004836D4 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		5CA0FC342349D36F004836D4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5C41A4E62349D57A0008A102 /* CarViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5CA0FC352349D379004836D4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5CA0FC372349D392004836D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5CA0FC042349C8D1004836D4 /* Main.storyboard */,
+				5CA0FC092349C8D3004836D4 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B2DC2E293A11D8B3F8E7441A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72EA4E08192A7C6581241102 /* Pods_SixtCars.framework */,
+				E183CCD173152170A591582A /* Pods_SixtCarsTests.framework */,
+				D5580399EC4313CE49CD7166 /* Pods_SixtCarsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CA0FC252349C8D3004836D4 /* Build configuration list for PBXNativeTarget "SixtCars" */;
 			buildPhases = (
+				BD3566C11A81A336332E67D0 /* [CP] Check Pods Manifest.lock */,
 				5CA0FBF72349C8D1004836D4 /* Sources */,
 				5CA0FBF82349C8D1004836D4 /* Frameworks */,
 				5CA0FBF92349C8D1004836D4 /* Resources */,
+				F5804C2282CC3B37653D1A96 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +259,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CA0FC282349C8D3004836D4 /* Build configuration list for PBXNativeTarget "SixtCarsTests" */;
 			buildPhases = (
+				5975E3849EE71087D2FC849B /* [CP] Check Pods Manifest.lock */,
 				5CA0FC0D2349C8D3004836D4 /* Sources */,
 				5CA0FC0E2349C8D3004836D4 /* Frameworks */,
 				5CA0FC0F2349C8D3004836D4 /* Resources */,
@@ -170,6 +278,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CA0FC2B2349C8D3004836D4 /* Build configuration list for PBXNativeTarget "SixtCarsUITests" */;
 			buildPhases = (
+				47BACD0601157580546D4F99 /* [CP] Check Pods Manifest.lock */,
 				5CA0FC182349C8D3004836D4 /* Sources */,
 				5CA0FC192349C8D3004836D4 /* Frameworks */,
 				5CA0FC1A2349C8D3004836D4 /* Resources */,
@@ -254,14 +363,102 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47BACD0601157580546D4F99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SixtCarsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5975E3849EE71087D2FC849B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SixtCarsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD3566C11A81A336332E67D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SixtCars-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5804C2282CC3B37653D1A96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SixtCars/Pods-SixtCars-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SixtCars/Pods-SixtCars-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SixtCars/Pods-SixtCars-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5CA0FBF72349C8D1004836D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CA0FC032349C8D1004836D4 /* SecondViewController.swift in Sources */,
+				5CA0FC2F2349CF44004836D4 /* ListViewController.swift in Sources */,
+				5CA0FC032349C8D1004836D4 /* MapViewController.swift in Sources */,
+				5C41A4ED2349D7200008A102 /* Car.swift in Sources */,
 				5CA0FBFF2349C8D1004836D4 /* AppDelegate.swift in Sources */,
-				5CA0FC012349C8D1004836D4 /* FirstViewController.swift in Sources */,
+				5C41A4E72349D57A0008A102 /* CarViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +467,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CA0FC162349C8D3004836D4 /* SixtCarsTests.swift in Sources */,
+				5C41A4E82349D57A0008A102 /* CarViewModel.swift in Sources */,
+				5C41A4EE2349D7200008A102 /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +633,7 @@
 		};
 		5CA0FC262349C8D3004836D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1063C6403EC5BCDD3116D44 /* Pods-SixtCars.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +651,7 @@
 		};
 		5CA0FC272349C8D3004836D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE5F8F6D926E52B1AAC13574 /* Pods-SixtCars.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +669,7 @@
 		};
 		5CA0FC292349C8D3004836D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7B067C6D3DD14FFA29104D7 /* Pods-SixtCarsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +690,7 @@
 		};
 		5CA0FC2A2349C8D3004836D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CCDA1104C7D97B5C0BEBB23 /* Pods-SixtCarsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +711,7 @@
 		};
 		5CA0FC2C2349C8D3004836D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53DF85B2F968E92347776EAB /* Pods-SixtCarsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +731,7 @@
 		};
 		5CA0FC2D2349C8D3004836D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B88ACBE9326446A97F343F2 /* Pods-SixtCarsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

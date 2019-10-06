@@ -1,0 +1,6 @@
+framework module Pods_SixtCarsUITests {
+  umbrella header "Pods-SixtCarsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
