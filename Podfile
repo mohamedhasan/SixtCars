@@ -8,8 +8,8 @@ target 'SixtCars' do
   # Pods for SixtCars
 pod 'Alamofire'
 pod 'SDWebImage'
-pod 'SVProgressHUD'
 pod 'SPStorkController'
+
   target 'SixtCarsTests' do
     inherit! :search_paths
     # Pods for testing
